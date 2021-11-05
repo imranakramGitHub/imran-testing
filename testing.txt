@@ -1,0 +1,32 @@
+Validate user ID is valid for online banking
+Pass UserID in GET message
+
+test 1: check if user ID is valid
+USERID valid - message OK
+
+test 2: check if user ID is invalid
+USERID invalid - error message
+
+test 3: check if user ID has been entered
+USERPIN blank = fail
+
+INTEGRATION TEST
+================
+User enter user ID in online field
+
+On click, user ID collected successfully
+Response back from clickButton object
+
+
+SYSTEM TEST
+===========
+user enters ID into online banking
+On click, user ID collected successfully
+GET message sent to checkUser object (request)
+Response sent back:
+User ID valid - ok
+User ID invalid - return error message 'please enter valid username'
+
+
+
+

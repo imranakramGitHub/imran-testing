@@ -17,7 +17,6 @@ User enter user ID in online field
 On click, user ID collected successfully
 Response back from clickButton object
 
-
 SYSTEM TEST
 ===========
 user enters ID into online banking
@@ -26,6 +25,30 @@ GET message sent to checkUser object (request)
 Response sent back:
 User ID valid - ok
 User ID invalid - return error message 'please enter valid username'
+
+
+ACCEPTANCE TESTING USIING BDD
+=============================
+As a customer, I want to loging to online banking so that I can access my account portal
+
+BDD1
+	GIVEN: A user is on the login page
+	WHEN: User types in correct user ID
+	THEN: User is taken to secret pin screen
+
+BDD2
+	GIVEN: A user is on the login page
+	WHEN: User types in incorrect user ID or type no user ID
+	THEN: User is taken back to login screen with error message
+
+
+
+
+
+
+
+
+
 
 
 
